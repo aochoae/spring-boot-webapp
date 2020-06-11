@@ -1,7 +1,7 @@
 # Web Application
 
-* Java SE Development Kit 8
-* Spring Boot 2.2.x
+* Java SE Development Kit 11
+* Spring Boot 2.3.0
 
 ## Run!
 

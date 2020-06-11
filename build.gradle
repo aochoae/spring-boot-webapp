@@ -6,7 +6,7 @@ subprojects {
     apply plugin: 'idea'
 
     ext {
-        springBootVersion = '2.2.7.RELEASE'
+        springBootVersion = '2.3.0.RELEASE'
         springDependencyManagementVersion = '1.0.9.RELEASE'
         javaxServletVersion = '4.0.1'
         junitJupiterVersion = '5.6.2'
@@ -16,8 +16,12 @@ subprojects {
     version = '1.0.0-SNAPSHOT'
 
     java {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter-validation'
     }
 
     repositories {
