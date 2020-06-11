@@ -1,0 +1,34 @@
+plugins {
+    id 'org.springframework.boot' version "${springBootVersion}"
+    id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+    id 'war'
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+dependencies {
+
+    implementation ('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+    providedCompile "javax.servlet:javax.servlet-api:${javaxServletVersion}"
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    implementation project(':application-services');
+
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}"
+}
+
+test {
+    useJUnitPlatform()
+}
