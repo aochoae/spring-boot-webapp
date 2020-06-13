@@ -5,7 +5,7 @@
 
 ## Run!
 
-    ./gradlew bootWar --args='--spring.profiles.active=dev'
+    ./gradlew bootRun --args='--spring.profiles.active=dev'
 
 ## Build
 
