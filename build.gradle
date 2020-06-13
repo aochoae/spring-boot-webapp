@@ -6,7 +6,7 @@ subprojects {
     apply plugin: 'idea'
 
     ext {
-        springBootVersion = '2.3.0.RELEASE'
+        springBootVersion = '2.3.1.RELEASE'
         springDependencyManagementVersion = '1.0.9.RELEASE'
         javaxServletVersion = '4.0.1'
         junitJupiterVersion = '5.6.2'
