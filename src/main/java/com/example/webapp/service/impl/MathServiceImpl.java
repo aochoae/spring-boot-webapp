@@ -1,4 +1,6 @@
-package com.example.application.services.math;
+package com.example.webapp.service.impl;
+
+import com.example.webapp.service.MathService;
 
 import org.springframework.stereotype.Service;
 
@@ -9,5 +11,4 @@ public class MathServiceImpl implements MathService {
     public int summation(int number) {
         return number * (number + 1) / 2;
     }
-
 }

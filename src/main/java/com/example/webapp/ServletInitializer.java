@@ -1,4 +1,4 @@
-package com.example.application.webapp;
+package com.example.webapp;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -9,5 +9,4 @@ public class ServletInitializer extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(WebApplication.class);
     }
-
 }

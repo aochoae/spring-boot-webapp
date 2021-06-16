@@ -1,4 +1,4 @@
-package com.example.application.services.math;
+package com.example.webapp.service;
 
 public interface MathService {
 

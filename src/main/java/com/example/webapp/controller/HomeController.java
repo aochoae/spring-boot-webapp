@@ -1,4 +1,4 @@
-package com.example.application.webapp.home;
+package com.example.webapp.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -12,10 +12,4 @@ public class HomeController {
     public ModelAndView index() {
         return new ModelAndView("index", HttpStatus.OK);
     }
-
-    @GetMapping(path = "/hola")
-    public ModelAndView hola() {
-        return new ModelAndView("index", HttpStatus.OK);
-    }
-
 }

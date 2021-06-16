@@ -1,13 +1,12 @@
-package com.example.application.webapp;
+package com.example.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.example.application")
+@SpringBootApplication
 public class WebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebApplication.class, args);
+        SpringApplication.run(WebApplication.class);
     }
-
 }
