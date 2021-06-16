@@ -16,6 +16,6 @@ indent_style = space
 indent_size = 4
 
 # 2 space indentation
-[*.html]
+[{*.html,*.js}]
 indent_style = space
 indent_size = 2
